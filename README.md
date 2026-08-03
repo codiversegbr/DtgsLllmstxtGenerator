@@ -3,7 +3,7 @@
 <p align="center"><strong>by codiverse</strong>
 
 <h2>Features</h2>
-✅ generates llms.txt custom for your shop<compatible with Shopware Cooke Consent Management<br/>
+✅ generates llms.txt custom for your shop<br/>
 ✅ optionally includes all products<br/>
 ✅ optionally includes all categories<br/>
 ✅ optionally includes category description<br/>
