@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <defaults public="true" />
+
+        <!-- Subscriber -->
+        <service id="dtgs_lllmstxt_generator.subscriber.routing" class="DtgsLllmstxtGenerator\Subscriber\Frontend\Routing">
+            <tag name="shopware.event_subscriber" />
+        </service>
+
+        <!-- Components -->
+        <service id="dtgs_lllmstxt_generator.components.llms_txt_generator" class="DtgsLllmstxtGenerator\Components\LlmsTxtGenerator">
+            <argument type="service" id="service_container" />
+            <argument type="service" id="dbal_connection" />
+        </service>
+    </services>
+</container>

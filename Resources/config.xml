@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../engine/Shopware/Components/Plugin/schema/config.xsd">
+
+    <elements>
+        <element required="true" type="boolean" scope="shop">
+            <name>enable_plugin</name>
+            <label lang="de">Plugin für diesen Shop aktivieren?</label>
+            <label lang="en">Enable plugin for this shop?</label>
+            <value>true</value>
+        </element>
+
+        <element type="text" scope="shop">
+            <name>additional_info</name>
+            <label lang="de">Zusätzliche Informationen</label>
+            <label lang="en">Additional information</label>
+            <description lang="de">Optionaler Freitext, der in die llms.txt aufgenommen wird (z. B. Hinweise zu Versand, Kontakt oder Nutzungsbedingungen).</description>
+            <description lang="en">Optional free text that will be included in the llms.txt (e.g. notes about shipping, contact or terms of use).</description>
+        </element>
+
+        <element required="true" type="boolean" scope="shop">
+            <name>include_categories</name>
+            <label lang="de">Kategorien einbinden?</label>
+            <label lang="en">Include categories?</label>
+            <value>true</value>
+            <description lang="de">Nimmt die Kategoriestruktur des Shops in die llms.txt auf.</description>
+            <description lang="en">Includes the shop's category structure in the llms.txt.</description>
+        </element>
+
+        <element required="true" type="boolean" scope="shop">
+            <name>include_category_description</name>
+            <label lang="de">Kategoriebeschreibung einbinden?</label>
+            <label lang="en">Include category description?</label>
+            <value>true</value>
+            <description lang="de">Nimmt die Beschreibung (Meta-Beschreibung bzw. CMS-Text) der Kategorien in die llms.txt auf.</description>
+            <description lang="en">Includes the category description (meta description or CMS text) in the llms.txt.</description>
+        </element>
+
+        <element required="true" type="boolean" scope="shop">
+            <name>include_products</name>
+            <label lang="de">Produkte einbinden?</label>
+            <label lang="en">Include products?</label>
+            <value>true</value>
+            <description lang="de">Nimmt aktive Produkte des Shops in die llms.txt auf.</description>
+            <description lang="en">Includes active products of the shop in the llms.txt.</description>
+        </element>
+
+        <element required="true" type="number" scope="shop">
+            <name>max_products</name>
+            <label lang="de">Maximale Anzahl an Produkten</label>
+            <label lang="en">Maximum number of products</label>
+            <value>200</value>
+            <description lang="de">Begrenzt die Anzahl der in die llms.txt aufgenommenen Produkte, um die Dateigröße zu kontrollieren.</description>
+            <description lang="en">Limits the number of products included in the llms.txt in order to control the file size.</description>
+        </element>
+    </elements>
+</config>

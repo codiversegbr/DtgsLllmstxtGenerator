@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
+
+    <label lang="de">codiverse LLMs.txt Generator</label>
+    <label lang="en">codiverse LLMs.txt Generator</label>
+
+    <version>1.0.0</version>
+    <copyright>(c) by codiverse GbR</copyright>
+    <license>proprietary</license>
+    <link>https://store.shopware.com</link>
+    <author>codiverse GbR</author>
+    <compatibility minVersion="5.7.0" />
+    <description lang="de">Dieses Plugin stellt automatisiert eine llms.txt mit allen wichtigen Informationen aus dem Shop bereit. Die Datei ist unter /llms.txt erreichbar und liefert Large Language Models (LLMs) strukturierte Informationen über Ihren Shop, Ihre Kategorien und Ihre Produkte.</description>
+    <description lang="en">This plugin automatically provides an llms.txt containing all relevant information about your shop. The file is available at /llms.txt and delivers structured information about your shop, categories and products to Large Language Models (LLMs).</description>
+
+    <changelog version="1.0.0">
+        <changes lang="de">Initiales Release: Automatische Bereitstellung der llms.txt unter /llms.txt</changes>
+        <changes lang="en">Initial release: automatic provisioning of llms.txt at /llms.txt</changes>
+    </changelog>
+
+</plugin>
